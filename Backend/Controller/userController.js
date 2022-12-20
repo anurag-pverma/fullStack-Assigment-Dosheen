@@ -11,7 +11,7 @@ export  const getdata =async(req, res)=> {
 
 export const  createData = async (req, res)=>{
    try {
-    const {name, email, password, repeatePassword} = req.body;
+    const {name, email, password, repeatePassword} = req.body
     const saveData = new UserData({
        name,
        email, 
@@ -25,3 +25,4 @@ export const  createData = async (req, res)=>{
    }
 
 }
+

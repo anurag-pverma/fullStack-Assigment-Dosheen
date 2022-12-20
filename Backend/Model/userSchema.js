@@ -2,10 +2,18 @@ import mongoose from "mongoose"
 const { Schema } = mongoose;
 
 const UserSchma = new Schema({
-  name: String,
-  email: String,
-  password:String,
-  repeatePassword:String,
+  name:{
+    type: String, required:true
+  },
+  email:{
+    type: String, required:true
+  },
+  password:{
+    type: String, required:true
+  },
+  repeatePassword:{
+    type: String, required:true
+  },
 
 });
 
